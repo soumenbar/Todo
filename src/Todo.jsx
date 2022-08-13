@@ -17,8 +17,11 @@ export default function Todo(){
             Quantity:quantity.current.value,
             Price: price.current.value,
         }])
+        item.current.value="";
+        quantity.current.value="";
+        price.current.value="";
         setError("")
-        setDef("");
+       // setDef("");
         
     }
         else 
