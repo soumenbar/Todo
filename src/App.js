@@ -1,6 +1,5 @@
 
 import './App.css';
-import Fetch from './Fetch';
 import Todo from './Todo';
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
           React Todo
           <br></br>
-          {/*<Fetch/>*/}
+          
           <Todo/>
     </div>
   );
