@@ -7,7 +7,6 @@ export default function Todo(){
     let quantity=useRef();
     let price=useRef();
     let[list,setList]=useState([]);
-    let[def,setDef]=useState(null);
     let[error,setError]=useState("");
 
     function handleAdd(){
@@ -55,9 +54,9 @@ export default function Todo(){
     return(
         <>
           <div style={{border:"1px solid blue", display: "inline-block"}}>
-            Item:<input style={{marginLeft:"28px"}} type="text" ref={item} Value={def}></input><br/>
-            Quantity:<input type="text" ref={quantity} Value={def}></input><br/>
-            Price:<input style={{marginLeft:"26px"}} type="text" ref={price} Value={def}></input><br/>
+            Item:<input style={{marginLeft:"28px"}} type="text" ref={item}></input><br/>
+            Quantity:<input type="text" ref={quantity} ></input><br/>
+            Price:<input style={{marginLeft:"26px"}} type="text" ref={price}></input><br/>
             <button onClick={handleAdd}>Add</button>
             <button onClick={handleRemove}>Remove All</button><br/>
             <span style={{color:"red"}}>{error}</span>
